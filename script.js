@@ -155,3 +155,59 @@ class Engineer extends Person {
 // let EngineerObj = new Engineer("CS engineer");
 
 let abidObj = new Engineer("cs");
+
+
+
+
+
+let a = 5;
+let b = 10;
+
+console.log("a = ", a);
+console.log("b = ", b);
+try {
+  console.log("a+b=", a + c);
+} catch (err) {
+  console.log(err);
+}
+
+console.log("a-b=", a - b);
+console.log("a+b=", a + b);
+
+
+
+
+let Data = "secret information";
+
+class user {
+  constructor(name, Email) {
+    this.name = name;
+    this.Email = Email;
+  }
+
+  viewData() {
+    console.log(`date is ${Data}`);
+  }
+}
+
+class Admin extends user {
+  constructor(name, Email) {
+    super(name, Email);
+  }
+
+  EditData() {
+    Data = "some new value";
+  }
+}
+
+let student1 = new user("abid", "abc@gmail.com");
+
+// console.log(student1);
+
+let teacher = new user("HOD", "bkl@gmail.com");
+
+// console.log(teacher);
+
+let Admin1 = new Admin("admin", "admin@gmail.com");
+
+
